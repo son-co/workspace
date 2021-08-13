@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.course-item {
+    background-color: orange;
+    text-align: center;
+    font-size: 40px;
+    min-height: 180px;
+    margin-top: 16px;
+}
+
+.main {
+    display: flex;
+    padding: 0 32px;
+}
+
+.sidebar {
+    width: 300px;
+}
+
+.content {
+    /* width: calc(100% - 300px); */
+    flex: 1;
+}
+
+@media (min-width:740px) and (max-width:1023px) {
+    .hide-tablet {
+        display: none;
+    }
+}
+
+@media (max-width:739px) {
+    .hide-mobile {
+        display: none;
+    }
+}
